@@ -2,9 +2,7 @@
 	margin: 0 auto;
 	list-style: none;
 }
-div.page_fon{
-	background-color: #fff;
-}
+
 .clear{
 	clear: both;
 }
@@ -128,10 +126,13 @@ div.top_line_logo {
 	height: 40px;
 	font-size: 18px;
 	font-family: Verdana;
+	background-color: #fff;
+	margin-top: 5px;
 }
 .main_menu ul{
 	float: left;
-	width: 565px;
+	width: 600px;
+	padding-left: 0;
 }
 
 .main_menu_first_li {
@@ -151,7 +152,7 @@ div.top_line_logo {
     background: #fff;
     margin-left: -2px;
     padding: 10px 15px 0px;
-    height: 33px;
+    height: 30px;
     transition: background 0.7s;
 }
 
@@ -164,7 +165,16 @@ div.top_line_logo {
 	color: #c4161c;
 }
 
+.main_menu_first_li{
 
+}
+
+.first_a {
+	background: url(img/home.png) 0px 0px no-repeat;
+	display: block;
+	width: 30px;
+	height: 30px;
+}
 
 .main_menu_button {
 	background: #c4161c url(img/menu.png) 100% 0px no-repeat;
@@ -172,7 +182,7 @@ div.top_line_logo {
     width: 205px;
     margin-right: 47px;
     float: right;
-    margin-top: 10px;
+    margin-top: 3px;
     transition: all 0.3s ease 0s;
 }
 
@@ -205,9 +215,12 @@ div.top_line_logo {
 
 					/*BEGGIN CONTENT LINE*/
 .content {
-	margin-top: 26px;
+    margin-top: 26px;
+    width: 1147px;
+    background-color: #fff;
+    padding: 27px;
+    margin-top: 0;
 }
-
 .conteiner{
 	width: 1200px;
 }
