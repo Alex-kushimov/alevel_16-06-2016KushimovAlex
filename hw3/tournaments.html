@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div id="main" class="main">
+		<div class="top_line">
+			<div class="top_line_logo">
+				<a href="#">
+					<img src="" alt="">
+				</a>
+			</div>
+			<div class="top_line_nav">
+				<ul>
+					<li><a href="symbolism.html" title="symbolism">Символика</a></li>
+	          		<li><a href="partners.html" title="partners">Партнеры </a></li>
+	          		<li><a href="contacts.html" title="contacts">Контакты</a></li>
+	          		<li><a href="questionAsk.html" title="questionAsk">Вопрос-ответ</a></li>
+				</ul>
+			</div>
+			<div class="top_line_search">
+				<form action="search">
+					<input type="text" value="Поиск">
+					<input type="submit" value="">
+				</form>
+			</div>
+			<div class="top_line_login">
+				<ul class="login">
+			        <li class="log_li"><a href="">Вход</a></li>
+			        <li class="log_reg"><a href="">Регистрация</a></li>
+		        </ul>
+			</div>
+		</div>
+
+		<div class="page_fon">
+		<hr class="clear">
+			<div class="main_menu">
+						<ul>
+							<li class="main_menu_first_li"><a href="index.html" class="first_a"></a></li>
+							<li><a href="tournaments.html">Турниры</a></li>
+							<li><a href="">Команды</a></li>
+							<li><a href="">Объявления</a></li>
+							<li><a href="">Спортсмены</a></li>
+						</ul>
+						<div class="main_menu_button">
+							<a href="">Добавить информацию</a>
+						</div>
+					</div>
+			<div class="clear"></div>
+
+			<div class="content">
+				<div class="conteiner">
+					<div class="wrap">
+						<div class="detail">
+							<span>Премиум турниры</span>
+							<a href="">(Подробнее)</a>
+						</div>
+						<div class="tournaments">
+							<ul>
+								<li>
+									<a href="">
+										<img src="img/t1.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Кубок ФК Универ - univer.sportinform.com.ua</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t2.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Кубок Харькова - park.sportinform.com.ua</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t3.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Радмир Лига AFC</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t4.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Турнир ТЦ "Барабашово"</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t5.png" alt="t1">
+										</img>
+										<div>
+										<p>Ассоциация футзала Кривого-Рога - afkr.sportinform.com.ua</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t6.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Кубок СК "ВИРТА"</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t7.jpg" alt="t1">
+										</img>
+										<div>
+										<p>Турнир памяти Резенкина С.З.</p>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<img src="img/t8.jpg" alt="t1">
+										</img>
+										<div>
+										<p>ELIT-Турнир</p>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+						<div class="right_Bar">
+							<div class="news">Новости</div>
+							<ul>
+								<li><a href="">Спортивный интерес от 15.06.2016</a></li>
+								<li><a href="">Ветеран "Урагана" Андрей Симка возвращается в команду</a></li>
+								<li><a href="">Спортивный интерес от 08.06.2016 </a></li>
+								<li><a href="">Чемпионат Украины по футзалу (U-19): мнения и перспективы</a></li>
+								<li><a href="">Спортивный интерес от 01.06.2016</a></li>
+								<li><a href="">футболу среди аматоров стали известны все участники плей-офф </a></li>
+								<li><a href="">Спортивный интерес от 25.05.2016 </a></li>
+								<li><a href="">Спортивный интерес от 18.05.2016 </a></li>
+							</ul>
+								<div class="all"><a href="">Все новости</a></div>
+								</div>
+
+								<!-- <div class="clear"></div> -->
+						</div>
+							<div class="clear"></div>
+							<div class="tourn_wrapper">
+								<div><a href="" class="submit">Добавить</a></div>
+								<div class="detail">
+									<span>Премиум турниры</span>
+									<a href="">(Подробнее)</a>
+								</div>
+								<div class="filter_tourn">
+									<form action="/tournaments/best/" method="POST">
+										<label for="country">Страна: </label>
+										<select name="country" id="country" onchange="select_city('#country','#city')">
+											<option value="">Выбрать</option>
+											<option value="28">Азербайджан</option>
+											<option value="26">Армения</option>
+											<option value="29">Беларусь</option>
+											<option value="48">Казахстан</option>
+											<option value="86">Киргизия</option>
+											<option value="38">Молдова</option>
+											<option value="4">Россия</option>
+											<option value="87">Таджикистан</option>
+											<option value="88">Туркмения</option>
+											<option value="64">Узбекистан</option>
+											<option value="1">Украина</option>
+										</select>
+										<label for="city">Город: </label>
+										<select name="city" id="city">
+										<option value="">Выбрать</option>
+										</select>
+										<label for="sport">Вид спорта: </label>
+										<select name="sport" id="sport">
+											<option value="">Выбрать</option>
+											<option value="1001">Футбол</option>
+											<option value="1003">Велоспорт</option>
+											<option value="1004">Баскетбол</option>
+											<option value="1005">Волейбол</option>
+											<option value="1007">Хоккей</option>
+											<option value="1008">Лёгкая атлетика</option>
+											<option value="1049">Альпинизм</option>
+											<option value="1050">Американский футбол</option>
+											<option value="1051">Аэробика</option>
+											<option value="1057">Бадминтон</option>
+											<option value="1059">Бейсбол</option>
+											<option value="1060">Бильярд</option>
+											<option value="1088">Боулинг</option>
+											<option value="1089">Вейкборд</option>
+											<option value="1104">Водный слалом</option>
+											<option value="1108">Гимнастика</option>
+											<option value="1116">Гольф</option>
+											<option value="1118">Городки</option>
+											<option value="1119">Гребля</option>
+											<option value="1124">Дартс</option>
+											<option value="1125">Домино</option>
+											<option value="1126">Йога</option>
+											<option value="1127">Кайтсерфинг</option>
+											<option value="1128">Кибер-спорт</option>
+											<option value="1129">Конный спорт</option>
+											<option value="1130">Коньки</option>
+											<option value="1134">Крикет</option>
+											<option value="1135">Крокет</option>
+											<option value="1136">Кёрлинг</option>
+											<option value="1137">Лыжный спорт</option>
+											<option value="1145">Лякросс</option>
+											<option value="1152">Парашютный спорт</option>
+											<option value="1158">Пейнтбол</option>
+											<option value="1159">Петанк</option>
+											<option value="1160">Пожарно-прикладной спорт</option><option value="1161">Покер</option>
+											<option value="1162">Полиатлон</option>
+											<option value="1163">Поло</option>
+											<option value="1164">Радиоспорт</option>
+											<option value="1165">Рафтинг</option>
+											<option value="1166">Регби</option>
+											<option value="1168">Роллер спорт</option>
+											<option value="1169">Русская лапта</option>
+											<option value="1170">Рыболовство</option>
+											<option value="1171">Санный спорт</option>
+											<option value="1174">Серфинг</option>
+											<option value="1180">Скалолазание</option>
+											<option value="1181">Сквош</option>
+											<option value="1182">Скейтборд</option>
+											<option value="1183">Сноуборд</option>
+											<option value="1184">Современное пятиборье</option>
+											<option value="1185">Софтбол</option>
+											<option value="1190">Спортивное ориентирование</option>
+											<option value="1191">Страйкбол</option>
+											<option value="1192">Стрельба</option>
+											<option value="1198">Танцы</option>
+											<option value="1243">Туризм</option>
+											<option value="1242">Теннис</option>
+											<option value="1241">Стрит челендж</option>
+											<option value="1240">Спортивное моделирование</option><option value="1239">Спортивная акробатика</option>
+											<option value="1238">Силовые виды спорта</option>
+											<option value="1237">Прыжки на батуте</option>
+											<option value="1209">Триатлон</option
+											>
+											<option value="1236">Парусный спорт</option>
+											<option value="1235">Паркур</option>
+											<option value="1234">Мотоспорт</option>
+											<option value="1233">Дайвинг</option>
+											<option value="1215">Фехтование</option>
+											<option value="1216">Фитнес</option>
+											<option value="1217">Фризби</option>
+											<option value="1232">Гандбол</option>
+											<option value="1231">Водные виды спорта</option>
+											<option value="1230">Боевые искусства</option>
+											<option value="1229">Автоспорт</option>
+											<option value="1228">Авиационный спорт</option>
+											<option value="1226">Шахматы</option>
+										</select> 
+										<input type="submit" value="Применить">
+										<input type="button" value="Очистить фильтр" onclick="go()">
+									</form>
+								</div>
+								<div class="name_column">
+									<ul>
+										<li>Логотип</li>
+										<li>Название</li>
+										<li>Страна</li>
+										<li>Город</li>
+										<li>Виды спорта</li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c1.jpg" alt="c1"></a></li>
+										<li><a href="">День Независимости Украины 2016</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Ильичевск</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c2.jpg" alt="c1"></a></li>
+										<li><a href="">Футбольна битва районів</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Винница</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c3.jpg" alt="c1"></a></li>
+										<li><a href="">Super Liga</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Харьков</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c3.jpg" alt="c1"></a></li>
+										<li><a href="">Super Liga</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Харьков</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c4.jpg" alt="c1"></a></li>
+										<li><a href="">Чемпионат по футболу</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Харьков</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c4.jpg" alt="c1"></a></li>
+										<li><a href="">Чемпионат по футболу</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Харьков</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+								<div class="champion_cup">
+									<ul>
+										<li><a href=""><img src="img/c4.jpg" alt="c1"></a></li>
+										<li><a href="">Чемпионат по футболу</a></li>
+										<li><span>Украина</span></li>
+										<li><span>Харьков</span></li>
+										<li><span>Футбол</span></li>
+									</ul>
+								</div>
+							</div>
+
+					<div class="clear"></div>
+
+					<div class="end">
+						<div class="end_left"></div>
+						<div class="end_middle"></div>
+						<div class="end_right"></div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="clear footer">
+						<div class="footer_block1">
+							<ul>
+								<li><a href="">Главная</a></li>
+								<li><a href="">Турниры</a></li>
+								<li><a href="">Команды</a></li>
+								<li><a href="">Объявления</a></li>
+								<li><a href="">Спортсмены</a></li>
+							</ul>
+						</div>
+						<div class="footer_block2">
+						<span class="f_r"></span>
+							<ul>
+								<li class="f_sprite1"><a href="">Спортсмены</a></li>
+								<li class="f_sprite2"><a href="">Команды</a></li>
+								<li class="f_sprite3"><a href="">Турниры</a></li>
+							</ul>
+						</div>
+						<div class="footer_block3">
+						<span class="f_r"></span>
+							<h3>Наши контакты</h3>
+							<ul>
+								<li>+38 093 923 23 39</li>
+								<li><a href="">info@sportinform.com.ua</a></li>
+								<li><a href="">скайп sportinform</a></li>
+							</ul>
+						</div>
+						<span class="f_r"></span>
+						<div class="footer_block4">
+							<h3>Мы в социальных сетях</h3>
+							<div class="social">
+								<a href="" class="soc_vk"></a>
+								<a href="" class="soc_fb"></a>
+								<a href="" class="soc_yt"></a>
+								<a href="" class="soc_t"></a>
+								<a href="" class="soc_g"></a>
+								<a href="" class="soc_rss"></a>
+							</div>
+							<hr class="clear">
+							<div class="copyrate">© 2012 - 2016 SportInform.com.ua | Все права защищены.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
