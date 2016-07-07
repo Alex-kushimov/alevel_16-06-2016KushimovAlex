@@ -300,6 +300,50 @@ main {
     margin-right: 5px;
     color: #fff;
 }
+
+footer{
+    min-width: 100%;
+    min-height: 75px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    clear: both;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #363636;
+}
+footer .c-rite {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+}
+footer .c-rite p{
+    color: #DADADA;
+    font-size: 12px;
+}
+footer .c-rite p span{
+    color: #999;
+    font-size: 12px;
+}
+footer nav{
+    flex: 3 1 auto;
+}
+footer nav menu{
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer nav menu li{
+   margin: 0 10px;
+}
+
+footer nav menu li a{
+    text-transform: uppercase;
+    color: #FFF;
+    transition: color 0.3s linear;
+}
+footer nav menu li a:hover{
+    color: #DA4453;
+}
 /*******MEDIA BEGIN*******/
 
 @media (max-width: 750px) and (min-width: 360px){
