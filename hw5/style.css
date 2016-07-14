@@ -1,0 +1,78 @@
+body {
+	background: url(img/upfeathers.png);
+	font-family: Verdana;
+}
+
+.conteiner {
+	margin: 0 auto;
+	background-color: #0cf;
+	width: 650px;
+	border-radius: 10px;
+	height: 390px;
+}
+
+.conteiner h2 {
+	text-align: center;
+}
+
+#rock {
+	background-image: url(img/rock.png);
+	width: 200px;
+	height: 200px;
+	font-size: 50px;
+	border:none;
+	transition: 0.3s linear;
+	border-radius: 25px;
+}
+
+#rock:hover {
+	opacity: 0.6;
+}
+
+#paper {
+	background-image: url(img/paper.png);
+	background-color: #fff;
+	width: 200px;
+	height: 200px;
+	font-size: 50px;
+	transition: 0.3s linear;
+	border-radius: 25px;
+}
+
+#paper:hover {
+	opacity: 0.6;
+}
+#scissors {
+	background-image: url(img/scissors.png);
+	background-color: #0f9;
+	width: 200px;
+	height: 200px;
+	font-size: 50px;
+	transition: 0.3s linear;
+	border-radius: 25px;
+	margin-left: 20px;
+}
+
+#scissors:hover {
+	opacity: 0.6;
+}
+
+.conteiner span {
+	font-size: 20px;
+}
+
+.comp-chois {
+	float: left;
+    margin-right: 45px;
+    margin-left: 25px;
+}
+
+.your-chois {
+	float: left;
+    margin-right: 82px;
+}
+
+#demo2{
+	text-transform: capitalize;
+	font-size: 20px;
+}
