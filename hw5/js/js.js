@@ -1,9 +1,9 @@
 
 
 
-function myFunction (){
-  var choise	= event.target.value;
-	document.getElementById("demo2").innerHTML = event.target.value;
+function myFunction (value){
+  var choise	= value;
+	document.getElementById("demo2").innerHTML = value;
 
 var userChoice = choise;
 var computerChoice = Math.random();
@@ -35,7 +35,7 @@ else if (choice1 === "rock"){
 
 else if (choice1 === "paper"){
   if (choice2 === "rock"){
-    document.getElementById("demo3").innerHTML = "Your wins";
+    document.getElementById("demo3").innerHTML = "You wins";
   }else{
     document.getElementById("demo3").innerHTML = "You loose";
   }
