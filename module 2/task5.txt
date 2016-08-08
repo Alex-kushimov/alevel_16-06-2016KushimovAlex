@@ -1,0 +1,41 @@
+Тест
+1)Дайте определение полиморфизму в объектно-ориентированном программировании.
+2)Как в Javascript реализована инкапсуляция?
+3)Переопределите функцию update родителя Page в классе Article.
+4)Как в Javascript определяются защищенные (protected) свойства и методы?
+5)Как определить публичные (public) свойства и методы класса?
+
+Ответ:
+1)Полиморфизм — это способность обьекта использовать методы производного классабкоторый не существует на момент создания базового.
+2)Инкапсуляция – важная часть объектно-ориентированного программирования,
+ чтобы данные в разных экземплярах класса были отделены друг от друга; 
+это реализуется в JavaScript с помощью оператора this. 
+Однако, в отличие от других объектно-ориентированных языков программирования, 
+JavaScript не ограничивает доступ к данным внутри экземпляра класса.
+3)Page.prototype.update = function(){
+};
+4)function Animal(name) {
+
+    var privateVariable = 0
+
+    this._protectedName = name
+    this._protectedMethod = function(..) {
+
+        console.log(privateVariable)..
+    }
+
+    this.publicMethod = function() { ... }
+}
+5)	var C = (function(){
+	    function privateMethod() {};
+	    var C = function(){};
+	    C.prototype.publicMethod = function() {};
+	    return C;
+	})();
+	 
+	var instance = new C();
+	console.log(instance instanceof C);
+
+
+
+
