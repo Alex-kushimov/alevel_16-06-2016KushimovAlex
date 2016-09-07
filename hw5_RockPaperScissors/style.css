@@ -55,6 +55,7 @@ body {
 
 #scissors:hover {
 	opacity: 0.6;
+	border-radius: 25px;
 }
 
 .conteiner span {

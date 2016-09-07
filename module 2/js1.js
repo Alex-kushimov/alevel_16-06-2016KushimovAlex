@@ -25,9 +25,10 @@ console.log( sum(1000) );
 
 // Решение через рекурсию:
 
-function sum(n) {
-  return n != 1 ? n + sum(n - 1) : return 1;
+  function sumTo(n) {
+  return n * (n + 1) / 2;
 }
+
 
 console.log( sum(1000) );
 
