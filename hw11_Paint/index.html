@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)https://fiddle.jshell.net/_display/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+
+  
+  
+
+  
+  
+  
+
+  
+
+  <script type="text/javascript" src="./dummy.js"></script>
+
+  
+
+  
+
+  
+
+  
+    <link rel="stylesheet" type="text/css" href="./result-light.css">
+  
+
+  
+
+  <style type="text/css">
+    
+  </style>
+
+  <title></title>
+
+  
+    
+
+
+
+
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+var colors = ["black", "blue", "cyan", "magenta", "yellow", "red", "00FF00"];
+var thicknessSelect = document.getElementById("thicknessSelect");
+var plusBtn = document.getElementById("plus");
+var arcs = [];
+
+for (var i = 1; i < 50; i += 2) {
+  var option = document.createElement("option");
+  option.text = i;
+  option.value = i;
+  thicknessSelect.appendChild(option);
+}
+
+var colorSelect = document.getElementById("colorSelect");
+for (var i = 0; i < colors.length; i++) {
+  var option = document.createElement("option");
+  option.text = colors[i];
+  option.value = colors[i];
+  colorSelect.appendChild(option);
+}
+
+var canvas = document.getElementById('canvas'),
+  ctx = canvas.getContext('2d');
+
+window.addEventListener('resize', resizeCanvas, false);
+
+function drawStuff() {
+  for (var i = 0; i < arcs.length; i++) {
+    var arc = arcs[i];
+    ctx.beginPath();
+    ctx.arc(arc.pos.x, arc.pos.y, arc.thickness, 0, 2 * Math.PI, false);
+    ctx.fillStyle = colorSelect.value;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  /**
+   * Your drawings need to be inside this function otherwise they will be reset when 
+   * you resize the browser window and the canvas goes will be cleared.
+   */
+  drawStuff();
+}
+resizeCanvas();
+
+function getMousePos(canvas, evt) {
+  var rect = canvas.getBoundingClientRect();
+  return {
+    x: evt.clientX - rect.left,
+    y: evt.clientY - rect.top
+  };
+}
+
+canvas.addEventListener('mousemove', function(evt) {
+  if (evt.which == 1) {
+    var mousePos = getMousePos(canvas, evt);
+    arcs.push({
+      pos: mousePos,
+      thickness: thicknessSelect.value
+    });
+    drawStuff();
+  }
+
+
+}, false);
+canvas.addEventListener('click', function(evt) {
+  if (evt.which == 1) {
+    var mousePos = getMousePos(canvas, evt);
+    arcs.push({
+      pos: mousePos,
+      thickness: thicknessSelect.value
+    });
+    drawStuff();
+  }
+
+
+}, false);
+
+colorSelect.addEventListener('change', drawStuff);
+
+plusBtn.addEventListener('click', function() {
+  arcs.forEach(function(item) {
+    item.thickness++;
+  });
+  drawStuff();
+});
+
+}//]]> 
+
+</script>
+
+  
+</head>
+
+<body>
+  <select id="colorSelect">
+
+<option value="black">black</option><option value="blue">blue</option><option value="cyan">cyan</option><option value="magenta">magenta</option><option value="yellow">yellow</option><option value="red">red</option><option value="00FF00">00FF00</option></select>
+<select id="thicknessSelect">
+
+<option value="1">1</option><option value="3">3</option><option value="5">5</option><option value="7">7</option><option value="9">9</option><option value="11">11</option><option value="13">13</option><option value="15">15</option><option value="17">17</option><option value="19">19</option><option value="21">21</option><option value="23">23</option><option value="25">25</option><option value="27">27</option><option value="29">29</option><option value="31">31</option><option value="33">33</option><option value="35">35</option><option value="37">37</option><option value="39">39</option><option value="41">41</option><option value="43">43</option><option value="45">45</option><option value="47">47</option><option value="49">49</option></select>
+<button id="plus">+</button>
+<canvas id="canvas" width="545" height="372"></canvas>
+
+  
+
+
+
+
+</body></html>
