@@ -1,0 +1,15 @@
+img {
+	min-height:100%;
+	max-width:100%;
+	height: auto;
+}
+
+.gallery-thumbs-box >.gallery-thumbs > .gallery-thumb > img{
+	max-width: 100%;
+}
+
+[editable]{
+	cursor: pointer;
+	border-bottom: 1px dashed solid;
+	display: inline-block;
+}
