@@ -25,11 +25,11 @@
             <div class="col-xs-12">
 
                 <ul class="list-group">
-                    <li class="list-group-item">Name: <h4 editable="text" editable-text onafterchange="saveData(this)">test user</h4></li>
-                    <li class="list-group-item" onafterchange="saveData(this)">Password: <h4 editable="password" editable-text onafterchange="saveData(this)">111111</h4></li>
-                    <li class="list-group-item">E-mail: <h4 editable="email" editable-text onafterchange="saveData(this)">Bob@mail.ru</h4></li>
-                    <li class="list-group-item">Age: <h4 editable="number" editable-text onafterchange="saveData(this)">18</h4></li>
-                    <li class="list-group-item">Countries: <h4 editable="select" option="countries" editable-text onafterchange="saveData(this)">Ukraine</h4></li>
+                    <li class="list-group-item">Name: <h4 editable="text" editable-text onafterchange="saveData" onbeforesave="validateData">test user</h4></li>
+                    <li class="list-group-item" onafterchange="saveData">Password: <h4 editable="password" editable-text onafterchange="saveData" onbeforesave="validateData">111111</h4></li>
+                    <li class="list-group-item">E-mail: <h4 editable="email" editable-text onafterchange="saveData" onbeforesave="validateEmail">Bob@mail.ru</h4></li>
+                    <li class="list-group-item">Age: <h4 editable="number" editable-text onafterchange="saveData" onbeforesave="validateAge">-10</h4></li>
+                    <li class="list-group-item">Countries: <h4 editable="select" option="countries" editable-text onafterchange="saveData" onbeforesave="validateData">Ukraine</h4></li>
                 </ul>
             </div>
         </div>
